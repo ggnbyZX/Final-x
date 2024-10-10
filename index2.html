@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Page 2/stylee.css" />
+    <link rel="stylesheet" href="Page 2/quaries.css" />
+
+    <script defer src="Page 2/Java2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-two section">
+        <div class="second-left-half">
+          <header class="header logo-section">
+            <div class="main-logo">
+              <img
+              src="photos/laragori-hackathon-cup.png"
+              alt="Website Logo"
+              class="second-logo"
+              width="500px"
+              height="75px"
+              style="transform: translate(-100px); position: absolute;"
+               /> 
+            </div>
+          </header>
+          <div class="left-quote-part">
+            <div class="photo-text">
+              <q class="quote-text">
+                Never trust everything you see on the computer screen
+              </q>
+            </div>
+          </div>
+          <div class="yellow-photo"></div>
+        </div>
+
+        <div class="second-right-half">
+          <p class="creating-account">Start Creating Your Account</p>
+          <div class="info-section-err-msg">
+            <div class="info-section">
+              <div class="info-steps">
+                <p class="step step-one">1</p>
+                <img
+                  src="photos/Frame 9.svg"
+                  class="check-tick hidden"
+                  alt="Check icon"
+                />
+                <div class="for-line"></div>
+                <p class="step step-two">2</p>
+              </div>
+              <div class="personal-info">
+                <p class="step-info">Personal information</p>
+                <p class="step-info">Hacking experience</p>
+              </div>
+            </div>
+            <div class="error-msg-box">
+             
+            </div>
+          </div>
+
+          <h2 class="personal-heading">Personal information</h2>
+          <p class="personal-para">These Are Basic Information Fields</p>
+
+          <form class="form-input">
+            <div class="each-input">
+              <label class="label-line" for="full-name"
+                >Name<span class="tick">^</span></label
+              >
+              <input
+                id="full-name"
+                type="text"
+                placeholder=""
+                requered
+                class="name-input input"
+                oninput="getValue('name-input')"
+                autocomplete="off"
+              />
+              <img
+                src="photos/check-circle-fill.svg"
+                alt="check-tick"
+                class="green-tick hidden"
+              />
+            </div>
+
+            <div class="each-input">
+              <label class="label-line" for="email"
+                >Email<span class="tick">^</span></label
+              >
+              <input
+                id="email"
+                text="email"
+                placeholder=""
+                required
+                class="email-input input"
+                oninput="getValue('email-input')"
+                autocomplete="off"
+              />
+              <img
+                src="photos/check-circle-fill.svg"
+                alt="check-tick"
+                class="green-tick hidden"
+              />
+            </div>
+
+            <div class="each-input">
+              <label class="label-line" for="phone-number"
+                >Phone number<span class="tick">^</span></label
+              >
+              <input
+                id="phone-number"
+                text="number"
+                placeholder=""
+                required
+                class="phone-num-input input"
+                maxlength="9"
+                oninput="getValue('phone-num-input')"
+                autocomplete="off"
+              />
+              <img
+                src="photos/check-circle-fill.svg"
+                alt="check-tick"
+                class="green-tick hidden"
+              />
+            </div>
+
+            <div class="each-input">
+              <label class="label-line" for="text"
+                >Date of birth<span class="tick">^</span></label
+              >
+              <input
+                id="text"
+                required
+                type="text"
+                placeholder=""
+                onblur="(this.type='text')"
+                class="birthday-input input"
+                oninput="getValue('birthday-input')"
+                autocomplete="off"
+              />
+              <img
+                src="photos/check-circle-fill.svg"
+                alt="check-tick"
+                class="green-tick hidden"
+              />
+            </div>
+          </form>
+
+          <div class="buttons">
+            <button class="btn-left">
+              <a class='link-back' href='/'>Back</a>
+            </button>
+            <button type="submit" class="btn-right submit-btn">
+              <a class="link-next">
+                Next
+                <img
+                  src="photos/first-arrow-right-circle.svg"
+                  alt="Right Arrow"
+                />
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
